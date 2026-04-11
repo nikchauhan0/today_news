@@ -1,6 +1,4 @@
-google.generativeai
-google.genai
+google-generativeai
 requests
-bs4
-hashlib
+beautifulsoup4
 gunicorn
