@@ -1,0 +1,6 @@
+google.generativeai
+google.genai
+requests
+bs4
+hashlib
+gunicorn

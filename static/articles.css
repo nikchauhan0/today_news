@@ -1,0 +1,377 @@
+/* PREMIUM ARTICLE READER - ELEGANT LIGHT MODE */
+
+.article-container {
+    max-width: 950px;
+    margin: 60px auto;
+    background: #ffffff;
+    padding: 55px 65px;
+    border-radius: 28px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.08),
+                0 0 0 1px rgba(0, 0, 0, 0.02);
+    transition: all 0.4s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+    animation: fadeInUp 0.6s ease;
+}
+
+.article-container:hover {
+    box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.12),
+                0 0 0 1px rgba(229, 62, 62, 0.1);
+    transform: translateY(-4px);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* article title - elegant serif */
+.article-title {
+    font-family: 'Playfair Display', 'Georgia', 'Times New Roman', serif;
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: #1a202c;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+    margin-bottom: 20px;
+}
+
+/* article divider - elegant red accent */
+.article-divider {
+    width: 80px;
+    height: 3px;
+    background: #e53e3e;
+    margin: 20px 0 30px;
+    border-radius: 4px;
+}
+
+/* article metadata - clean typography */
+.article-meta {
+    display: flex;
+    gap: 28px;
+    margin-bottom: 35px;
+    font-family: 'Inter', 'SF Pro Display', sans-serif;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: #a0aec0;
+    border-bottom: 1px solid #edf2f7;
+    padding-bottom: 20px;
+}
+
+.article-meta span {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.article-meta i {
+    font-size: 0.85rem;
+    color: #e53e3e;
+}
+
+/* article content - highly readable */
+.article-content {
+    font-family: 'Cormorant Garamond', 'Georgia', 'Times New Roman', serif;
+    font-size: 1.18rem;
+    line-height: 1.85;
+    color: #2d3748;
+    text-align: justify;
+    font-weight: 400;
+}
+
+/* elegant drop cap - first letter */
+.article-content p:first-of-type::first-letter {
+    font-size: 4.5rem;
+    font-weight: 800;
+    float: left;
+    line-height: 0.75;
+    margin-right: 18px;
+    color: #e53e3e;
+    font-family: 'Playfair Display', serif;
+    text-shadow: none;
+}
+
+/* paragraph spacing */
+.article-content p {
+    margin-bottom: 1.6rem;
+}
+
+/* headings inside article - refined */
+.article-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #1a202c;
+    margin: 2.2rem 0 1rem;
+    letter-spacing: -0.3px;
+    border-left: 4px solid #e53e3e;
+    padding-left: 20px;
+}
+
+.article-content h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #2d3748;
+    margin: 1.6rem 0 0.8rem;
+}
+
+/* blockquote - elegant */
+.article-content blockquote {
+    border-left: 4px solid #e53e3e;
+    background: #fafaf9;
+    padding: 22px 30px;
+    margin: 30px 0;
+    border-radius: 16px;
+    font-style: italic;
+    color: #4a5568;
+    font-size: 1.1rem;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+/* links inside article */
+.article-content a {
+    color: #e53e3e;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(229, 62, 62, 0.3);
+    transition: all 0.25s;
+}
+
+.article-content a:hover {
+    color: #c53030;
+    border-bottom-color: #c53030;
+}
+
+/* list styling */
+.article-content ul, 
+.article-content ol {
+    margin: 1rem 0 1.5rem 1.8rem;
+}
+
+.article-content li {
+    margin: 0.6rem 0;
+}
+
+/* image styling within article */
+.article-content img {
+    max-width: 100%;
+    border-radius: 20px;
+    margin: 30px 0;
+    box-shadow: 0 10px 30px -8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #edf2f7;
+}
+
+/* code blocks - clean */
+.article-content pre {
+    background: #f7fafc;
+    padding: 22px;
+    border-radius: 16px;
+    overflow-x: auto;
+    font-family: 'Fira Code', 'Monaco', monospace;
+    font-size: 0.85rem;
+    border: 1px solid #e2e8f0;
+    margin: 25px 0;
+}
+
+.article-content code {
+    background: #f7fafc;
+    padding: 2px 8px;
+    border-radius: 8px;
+    font-family: 'Fira Code', monospace;
+    font-size: 0.85rem;
+    color: #e53e3e;
+    border: 1px solid #e2e8f0;
+}
+
+/* back link - elegant */
+.back-link {
+    margin-top: 55px;
+    padding-top: 30px;
+    border-top: 1px solid #edf2f7;
+    text-align: center;
+}
+
+.back-link a {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #e53e3e;
+    font-weight: 600;
+    padding: 10px 24px;
+    border-radius: 40px;
+    border: 1px solid rgba(229, 62, 62, 0.3);
+    transition: all 0.3s ease;
+    background: transparent;
+}
+
+.back-link a::before {
+    content: "←";
+    font-size: 1rem;
+    transition: transform 0.3s;
+}
+
+.back-link a:hover {
+    background: #e53e3e;
+    color: #ffffff;
+    border-color: #e53e3e;
+    gap: 14px;
+}
+
+.back-link a:hover::before {
+    transform: translateX(-4px);
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+@media (max-width: 768px) {
+    .article-container {
+        margin: 30px 20px;
+        padding: 32px 24px;
+        border-radius: 20px;
+    }
+    
+    .article-title {
+        font-size: 2rem;
+    }
+    
+    .article-content {
+        font-size: 1rem;
+        line-height: 1.75;
+    }
+    
+    .article-content p:first-of-type::first-letter {
+        font-size: 3.5rem;
+        margin-right: 12px;
+    }
+    
+    .article-meta {
+        flex-wrap: wrap;
+        gap: 12px;
+        font-size: 0.65rem;
+    }
+    
+    .article-divider {
+        width: 60px;
+    }
+    
+    .back-link a {
+        font-size: 0.7rem;
+        padding: 8px 18px;
+    }
+    
+    .article-content h2 {
+        font-size: 1.5rem;
+    }
+    
+    .article-content h3 {
+        font-size: 1.2rem;
+    }
+}
+
+/* ========== ADDITIONAL POLISH ========== */
+
+/* selection color */
+::selection {
+    background: #e53e3e;
+    color: #ffffff;
+}
+
+/* subtle reading animation for paragraphs */
+.article-content p {
+    animation: fadeSlide 0.5s ease forwards;
+    opacity: 0;
+}
+
+.article-content p:nth-child(1) { animation-delay: 0.05s; }
+.article-content p:nth-child(2) { animation-delay: 0.1s; }
+.article-content p:nth-child(3) { animation-delay: 0.15s; }
+.article-content p:nth-child(4) { animation-delay: 0.2s; }
+.article-content p:nth-child(5) { animation-delay: 0.25s; }
+.article-content p:nth-child(6) { animation-delay: 0.3s; }
+.article-content p:nth-child(7) { animation-delay: 0.35s; }
+.article-content p:nth-child(8) { animation-delay: 0.4s; }
+
+@keyframes fadeSlide {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* share buttons styling */
+.article-share {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 35px;
+}
+
+.article-share a {
+    color: #a0aec0;
+    transition: all 0.25s;
+    font-size: 1.2rem;
+}
+
+.article-share a:hover {
+    color: #e53e3e;
+    transform: translateY(-2px);
+}
+
+/* smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* focus styles for accessibility */
+.article-content a:focus,
+.back-link a:focus {
+    outline: 2px solid #e53e3e;
+    outline-offset: 4px;
+    border-radius: 4px;
+}
+
+/* beautiful table styling */
+.article-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.article-content th,
+.article-content td {
+    border: 1px solid #e2e8f0;
+    padding: 12px 16px;
+    text-align: left;
+}
+
+.article-content th {
+    background: #f7fafc;
+    font-weight: 600;
+    color: #1a202c;
+}
+
+.article-content tr:hover {
+    background: #fafaf9;
+}
+
+/* horizontal rule styling */
+.article-content hr {
+    border: none;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #e2e8f0, transparent);
+    margin: 30px 0;
+}
