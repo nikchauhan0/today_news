@@ -1,15 +1,11 @@
-from flask import *
-import pymysql as db
+from flask import Flask, render_template, request, redirect, jsonify
 import time
 import requests
 from bs4 import BeautifulSoup
 import random
 import google.generativeai as genai
-from flask import Flask, render_template, request, redirect
 import json
-from flask import Flask,jsonify
 import os
-from google.genai import types
 import hashlib
 from dotenv import load_dotenv
 
